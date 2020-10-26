@@ -1,4 +1,4 @@
-# Projet 2 - Vitesse de chute
+# Projet 3 - Vitesse de chute
 
 <!--- Changer la date de remise en modifiant le URL--->
 #### :alarm_clock: [Date de remise le dimanche 15 novembre à 23h59](https://www.timeanddate.com/countdown/generic?iso=20201115T2359&p0=165&msg=Remise&font=cursive&csz=1#)
