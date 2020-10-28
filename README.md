@@ -22,7 +22,7 @@ Cette fonction doit calculer les propriétés de l'eau (<img src="https://render
 
 Cependant, cette base de données ne fournit que des valeurs de <img src="https://render.githubusercontent.com/render/math?math=\rho"> et <img src="https://render.githubusercontent.com/render/math?math=\mu"> pour des températures égales à un multiplication de 5. Vous devez donc implémenter un algorithme qui calcule les valeurs de <img src="https://render.githubusercontent.com/render/math?math=\rho"> et <img src="https://render.githubusercontent.com/render/math?math=\mu"> pour des valeurs intermédiaires, en interpolant linéairement les valeurs présentes dans la base de données.
 
-Par exemple, une température de 14.3˚C doit approximer les propriétés de l'eau à <img src="https://render.githubusercontent.com/render/math?math=\rho=999.203"> et <img src="https://render.githubusercontent.com/render/math?math=\mu=0.001169">.
+Par exemple, une température de 14.3˚C doit approximer les propriétés de l'eau à <img src="https://render.githubusercontent.com/render/math?math=\rho=999.184"> et <img src="https://render.githubusercontent.com/render/math?math=\mu=0.0011638">.
 
 On assume que la température passée en paramètre est toujours entre 0 et 40, exclusivement.
 
