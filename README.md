@@ -58,8 +58,8 @@ Cette fonction calcule et retourne la vitesse d'une particule dans l'eau en fonc
     - Sinon, on passe à l’étape suivante.
 2. On passe en régime intermédiaire
 	- On utilise <img src="https://render.githubusercontent.com/render/math?math=R_{ep}"> calculé précédemment pour calculer <img src="https://render.githubusercontent.com/render/math?math=C_D">, <img src="https://render.githubusercontent.com/render/math?math=V"> et le nouveau <img src="https://render.githubusercontent.com/render/math?math=R_{ep}">
-	- On compare <img src="https://render.githubusercontent.com/render/math?math=V"> avec <img src="https://render.githubusercontent.com/render/math?math=V"> calculé précédemment. Si la différence est plus grande que 3 chiffres significatifs, on recommence l’étape 2, en s’assurant de rester en régime intermédiaire.
-	- Si la différence n’est pas significative, le problème est résolu.
+	- On compare <img src="https://render.githubusercontent.com/render/math?math=V"> avec <img src="https://render.githubusercontent.com/render/math?math=V"> calculé précédemment. Si la différence est plus grande que 0.001, on recommence l’étape 2, en s’assurant de rester en régime intermédiaire.
+	- Si la différence est plus petite que 0.001, le problème est résolu.
 
 À chaque itération, il est important d’afficher les résultats de <img src="https://render.githubusercontent.com/render/math?math=V">, <img src="https://render.githubusercontent.com/render/math?math=C_D"> et <img src="https://render.githubusercontent.com/render/math?math=R_{ep}">.
 
