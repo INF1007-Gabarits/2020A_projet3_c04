@@ -30,17 +30,18 @@ On assume que la température passée en paramètre est toujours entre 0 et 40, 
 
 Cette fonction retourne les valeurs de <img src="https://render.githubusercontent.com/render/math?math=V">, <img src="https://render.githubusercontent.com/render/math?math=C_D"> et <img src="https://render.githubusercontent.com/render/math?math=R_{ep}"> dans le cas d'un régime de Stockes (<img src="https://render.githubusercontent.com/render/math?math=R_{ep}≤0.3">), en utilisant les formules ci-dessous :
 
-<img src="https://render.githubusercontent.com/render/math?math=V=\frac{gd_{p}^{2}}{18}\left( \frac{\rho_{p}-\rho_{H2O}}{\mu} \right)">
+<img src="data/eq_V_stockes.gif">
 
-<img src="https://render.githubusercontent.com/render/math?math=C_D=24/R_ep">
+<img src="data/eq_cd_stockes.gif">
 
 ### 3. regime_intermediaire(Rep, diametre_particule, rho_particule, rho_eau, mu_eau)
 
 Cette fonction retourne les valeurs de <img src="https://render.githubusercontent.com/render/math?math=V">, <img src="https://render.githubusercontent.com/render/math?math=C_D"> et <img src="https://render.githubusercontent.com/render/math?math=R_{ep}"> dans le cas d'un régime intermédiaire (<img src="https://render.githubusercontent.com/render/math?math=0.3<R_{ep}≤1000">), en utilisant les formules ci-dessous :
 
-<img src="https://render.githubusercontent.com/render/math?math=V=\left[ \frac{4gd_{p}}{3C_D} \left( \frac{\rho_{p}-\rho_{H2O}}{\rho_{H2O}} \right) \right]^{1/2}">
+<img src="data/eq_V_inter.gif">
 
-<img src="https://render.githubusercontent.com/render/math?math=C_D=\frac{24}{R_{ep}} \left(1 + 0.14 R_{ep}^{0.7} \right)">
+<img src="data/eq_cd_inter.gif">
+
 
 ### 4. calcule_vitesse(rho_particule, diametre_particule, temperature_eau)
 
@@ -67,13 +68,13 @@ Cette fonction calcule et retourne la vitesse d'une particule dans l'eau en fonc
 >>>calcule_vitesse(rho_particule=2000, diametre_particule=1e-3, temperature_eau=14.3)
 
 Régime de Stockes
-V=0.466, Cd=0.060, Rep=398.511
+V=0.469, Cd=0.060, Rep=402.245
 Régime intermédiaire
-V=0.146, Cd=0.618, Rep=124.436
-V=0.115, Cd=0.983, Rep=98.625
-V=0.110, Cd=1.091, Rep=93.636
-V=0.108, Cd=1.117, Rep=92.529
-V=0.108, Cd=1.123, Rep=92.275
+V=0.146, Cd=0.616, Rep=125.232
+V=0.116, Cd=0.981, Rep=99.224
+V=0.110, Cd=1.088, Rep=94.204
+V=0.108, Cd=1.114, Rep=93.091
+V=0.108, Cd=1.120, Rep=92.836
 ```
 
 # Tests unitaires
